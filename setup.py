@@ -6,5 +6,9 @@ setup(
     description='point client',
     author="@gyran",
     author_email="gustav.ahlberg@gmail.com",
+    install_requires=[
+        'requests>=2.3.0',
+    ],
     license='LICENSE.txt',
-    packages=['pointpy'])
+    packages=['pointpy']
+)
