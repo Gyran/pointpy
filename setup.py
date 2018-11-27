@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pointpy',
-    version='1.0.0',
+    version='1.0.1',
     description='point client',
     author="@gyran",
     author_email="gustav.ahlberg@gmail.com",
