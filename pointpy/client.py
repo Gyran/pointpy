@@ -3,7 +3,7 @@ import requests
 
 class Point(object):
 
-    def __init__(self, client_credentials_manager):
+    def __init__(self, client_credentials_manager=None):
         self._client_credentials_manager = client_credentials_manager
 
         self._session = requests.Session()
