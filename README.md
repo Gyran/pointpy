@@ -16,5 +16,7 @@ password = 'ccccc'
 
 client_credentials_manager = pointpy.PointCredentialsManager(
     client_id, client_secret, username, password)
-p = pointpy.Point(client_credentials_manager=client_credentials_manager)
+point = pointpy.Point(client_credentials_manager=client_credentials_manager)
+
+point.devices()
 ```
