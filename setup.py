@@ -7,7 +7,7 @@ setup(
     author="@gyran",
     author_email="gustav.ahlberg@gmail.com",
     install_requires=[
-        'requests>=2.3.0',
+        'requests>=2.20.1',
     ],
     license='LICENSE.txt',
     packages=['pointpy']
