@@ -17,7 +17,7 @@ class Point(object):
         token = self._client_credentials_manager.get_access_token()
         return {'Authorization': 'Bearer {0}'.format(token)}
 
-    def _internal_call(self, method, url, payload):
+    def _internal_call(self, method, url, payload=None):
         if not url.startswith('http'):
             url = self.prefix + url
 
@@ -26,7 +26,7 @@ class Point(object):
         return self._session.request(method, url,
                                      headers=headers, params=payload)
 
-    def _get(self, url, payload):
+    def _get(self, url, payload=None):
         return self._internal_call('GET', url, payload)
 
     def devices(self):
